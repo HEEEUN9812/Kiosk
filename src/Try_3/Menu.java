@@ -34,6 +34,7 @@ public class Menu {
     }
 
     public List<Menu> getMenu() {
+        // 메인 메뉴 리스트
         return Arrays.asList(
                 new Menu("Burgers", "앵거스 비프 통살을 다져만든 버거"),
                 new Menu("Drinks", "매장에서 직접 만드는 음료"),
@@ -43,6 +44,7 @@ public class Menu {
     }
 
     public List<Menu> getOrderMenu(){
+        // 주문
         return Arrays.asList(
                 new Menu("Order", "장바구니를 확인 후 주문합니다."),
                 new Menu("Cancel", "진행중인 주문을 취소합니다.")

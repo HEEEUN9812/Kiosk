@@ -64,6 +64,7 @@ public class Product extends Menu {
     }
 
     public List<Product> getBurgersList(){
+        // 버거 상품 리스트
         return Arrays.asList(
                 new Product("ShackBurger", "토마토, 양상추, 쉑소스가 토핑된 치즈버거", 6.9),
                 new Product("SmokeShack", "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거", 8.9),
@@ -74,9 +75,8 @@ public class Product extends Menu {
     }
 
 
-
-
     public List<Product> getDrinksList() {
+        // 음료 상품 리스트
         return Arrays.asList(
                 new Product("CocaCola", "근본 코카 콜라", 2.0),
                 new Product("Sprite", "버거에는 시원한 스프라이트", 2.0),
@@ -85,6 +85,7 @@ public class Product extends Menu {
     }
 
     public List<Product> getBeersList() {
+        // 맥주 상품 리스트
         return Arrays.asList(
                 new Product("Cass", "카-스", 4.0),
                 new Product("Terra", "테-라", 5.0),

@@ -13,27 +13,23 @@ public class MenuViewer {
 
     private Menu menu;
     private Product product;
-    private Order order;
     private List<Product> burgersList;
     private List<Product> drinksList;
     private List<Product> beersList;
-    private List<Product> savedList;
 
     public MenuViewer() {
         this.menu = new Menu();
         this.product = new Product();
-        this.order = new Order();
         this.burgersList = product.getBurgersList();
         this.drinksList = product.getDrinksList();
         this.beersList = product.getBeersList();
-        this.savedList = order.getSavedList();
     }
 
 
 
 
     public void mainMenu() {
-        //
+        // 메인 메뉴판
         System.out.println("");
         System.out.println("");
         System.out.println("SHAKEAHCK BURGER에 오신걸 환영합니다.");
@@ -60,6 +56,7 @@ public class MenuViewer {
     }
 
     public void burgersMenu(){
+        // 버거 메뉴판
         System.out.println("");
         System.out.println("");
         System.out.println("SHAKEAHCK BURGER에 오신걸 환영합니다.");
@@ -74,6 +71,7 @@ public class MenuViewer {
     }
 
     public void drinksMenu(){
+        // 음료 메뉴판
         System.out.println("");
         System.out.println("");
         System.out.println("SHAKEAHCK BURGER에 오신걸 환영합니다.");
@@ -89,6 +87,7 @@ public class MenuViewer {
     }
 
     public void beersMenu(){
+        // 맥주 메뉴판
         System.out.println("");
         System.out.println("");
         System.out.println("SHAKEAHCK BURGER에 오신걸 환영합니다.");
@@ -104,6 +103,7 @@ public class MenuViewer {
     }
 
     public void selectBurgerMenu(int select){
+        // 버거 선택 화면
         System.out.println("");
         System.out.println("");
         System.out.println(burgersList.get(select));
@@ -116,6 +116,7 @@ public class MenuViewer {
     }
 
     public void selectDrinkMenu(int select){
+        // 음료 선택 화면
         System.out.println("");
         System.out.println("");
         System.out.println(drinksList.get(select));
@@ -127,6 +128,7 @@ public class MenuViewer {
     }
 
     public void selectBeerMenu(int select){
+        // 맥주 선택 화면
         System.out.println("");
         System.out.println("");
         System.out.println(beersList.get(select));
@@ -138,17 +140,20 @@ public class MenuViewer {
     }
 
         public void orderMenu() {
+        // 주문 내역 출력
             System.out.println("");
             System.out.println("");
             System.out.println("[ Order ]");
         }
 
         public void totalMenu(){
+        // 주문 총 금액 출력
             System.out.println("");
             System.out.println("[ Total ]");
         }
 
         public void selectButton(){
+        // 주문 선택 버튼
             System.out.println("");
             System.out.print("1. 주문");
             System.out.print("\t");
@@ -159,6 +164,7 @@ public class MenuViewer {
 
         int wait = 1;
     public void orderComplete (){
+        // 주문 완료 화면
         System.out.println("");
         System.out.println("");
         System.out.println("주문이 완료되었습니다!");
@@ -168,6 +174,7 @@ public class MenuViewer {
     }
 
     public void cancelMenu (){
+        // 주문 취소 화면
         System.out.println("");
         System.out.println("");
         System.out.println("진행하던 주물을 취소하시겠습니까?");

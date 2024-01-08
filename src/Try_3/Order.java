@@ -12,14 +12,17 @@ public class Order {
     List<Product> savedList = new ArrayList<>();
 
     public void saveList (Product product){
+        // 주문 리스트 저장
         savedList.add(product);
     }
 
     public void deleteList (){
+        // 주문 리스트 취소
         savedList.remove(savedList.size()-1);
     }
 
     public void clearList(){
+        // 주문 리스트 초기화
         savedList.clear();
     }
 
@@ -28,6 +31,7 @@ public class Order {
     }
 
     public void getTotalPrice(){
+        // 주문 리스트 총 금액
         Double totalPrice = getSavedList().stream().mapToDouble(Product::getProductPrice).sum();
         System.out.println("W " + totalPrice);
     }
