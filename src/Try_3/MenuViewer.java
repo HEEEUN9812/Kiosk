@@ -157,8 +157,8 @@ public class MenuViewer {
         }
 
 
-    public void orderComplete (){
         int wait = 1;
+    public void orderComplete (){
         System.out.println("");
         System.out.println("");
         System.out.println("주문이 완료되었습니다!");

@@ -62,6 +62,11 @@ public class Main {
                 if (select == 1){
                     menuViewer.orderComplete();
                     order.clearList();
+                    try {
+                        Thread.sleep(3000);
+                    }catch (InterruptedException e){
+                        e.printStackTrace();
+                    }
                 }
 
             } else if (select == 5) {
