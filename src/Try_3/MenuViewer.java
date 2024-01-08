@@ -137,28 +137,35 @@ public class MenuViewer {
         System.out.println("2. 취소");
     }
 
-//    public void deleteList (){
-//        order.savedList.remove(order.savedList.size() -1);
-//    }
+        public void orderMenu() {
+            System.out.println("");
+            System.out.println("");
+            System.out.println("[ Order ]");
+        }
 
-//    public void orderMenu(){
-//        System.out.println("[ Order ]");
-//        for(Product savedMenu : savedList){
-//            System.out.println(savedMenu);
-//        }
-//        System.out.println("");
-//        System.out.println("[ Total ]");
-//        order.getSavedList().get(productPrice);
-//    }
+        public void totalMenu(){
+            System.out.println("");
+            System.out.println("[ Total ]");
+        }
 
-//    public void orderComplete (){
-//        System.out.println("");
-//        System.out.println("");
-//        System.out.println("주문이 완료되었습니다!");
-//        System.out.println("");
-//        System.out.println("대기번호는 [ "+ wait+ " ] 번 입니다.");
-//        System.out.println("3초후 메뉴판으로 돌아갑니다.");
-//    }
+        public void selectButton(){
+            System.out.println("");
+            System.out.print("1. 주문");
+            System.out.print("\t");
+            System.out.print("\t");
+            System.out.println("2. 메뉴판");
+        }
+
+
+    public void orderComplete (){
+        int wait = 1;
+        System.out.println("");
+        System.out.println("");
+        System.out.println("주문이 완료되었습니다!");
+        System.out.println("");
+        System.out.println("대기번호는 [ "+ wait++ + " ] 번 입니다.");
+        System.out.println("3초후 메뉴판으로 돌아갑니다.");
+    }
 
     public void cancelMenu (){
         System.out.println("");

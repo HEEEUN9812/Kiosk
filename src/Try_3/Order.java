@@ -2,6 +2,7 @@ package Try_3;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Order {
     /*
@@ -24,5 +25,10 @@ public class Order {
 
     public List<Product> getSavedList() {
         return savedList;
+    }
+
+    public void getTotalPrice(){
+        Double totalPrice = getSavedList().stream().mapToDouble(Product::getProductPrice).sum();
+        System.out.println("W " + totalPrice);
     }
 }
